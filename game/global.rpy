@@ -1,0 +1,2 @@
+# GLOBAL GAME VARIABLES
+  define PLAYER = Character("[PLAYER_NAME]")
