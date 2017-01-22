@@ -24,7 +24,7 @@ label act_1_start:
     FLO "...Hi.  I am Water Elementalist Flo."
     KON "As you can see, we come from family of elementalists."
 
-    call elementalist_exp from _call_elementalist_exp
+    call elementalist_exp
 
     PLAYER "I guess you're a cook judging by your appearance?"
 
@@ -89,7 +89,7 @@ label act_1_start:
     "Kon and Flo slide into a pose as they show their strong family bond."
     "The sibling's magic synergy that compliment their jobs is a common path for mages."
 
-    call mage_career_pairing_exp from _call_mage_career_pairing_exp
+    call mage_career_pairing_exp
 
     "I turn to the other two in the group, a man and woman that seem to be a couple."
     "The female looked gloomy with the dark style of clothes she wore."
@@ -120,7 +120,7 @@ label act_1_start:
     MED "I come from a long line of doctors so my path was already decided for me when I was born."
     MED "All I see is pain and suffering...."
 
-    call mage_lineage_exp from _call_mage_lineage_exp
+    call mage_lineage_exp
 
     "Medwick droops his shoulders and sighs again."
     "...This dude is actually kind of depressing."
@@ -146,9 +146,9 @@ label act_1_start:
 
     MARJ "Oh! My official title is {b}Necromancer{/b} Marjorie Fel Noctis!"
 
-    call necromancy_exp from _call_necromancy_exp
+    call necromancy_exp
 
-    PLAYER "I knew it!  Your clan is one of the only necromancers allowed to practice its arts for special use cases."
+    PLAYER "I knew it!  You're clan is one of the only necromancers allowed to practice its arts for special use cases."
     MARJ "Heehee. It's not so special."
     MARJ "Most of the time they are just helping to solve murder cases or gardening."
 
@@ -239,14 +239,14 @@ label act_1_start:
     MARY "Sorry about my friend here. He gets a bit too enthusiastic about everything."
     MARY "It's like his magic also enhances his stupidity."
 
-    call enchantment_exp from _call_enchantment_exp
+    call enchantment_exp
 
     MARY "Wes and I are enchanters.  He enhances his body..."
     WES "MUSCLE!! RAH!!"
     MARY "..."
     MARY "I enhance my weapon, which is a rifle that also serves as my focus."
 
-    call foci_exp from _call_foci_exp
+    call foci_exp
 
     WES "Pfft. I have guns too!"
 
@@ -254,7 +254,7 @@ label act_1_start:
     "Looks like those tattoos are his focus."
     "I often just use my hands to build out quick samples, but when a quality product is needed I pull out my focus, a pen."
 
-    call runing_exp from _call_runing_exp
+    call runing_exp
 
     MARY "..."
     MARY "We all work in the guild here."
@@ -266,7 +266,7 @@ label act_1_start:
     MARY "She can't use any conventional spells, but she has a huge mana pool she can transfer to mages. A mana battery to put in simple terms."
     MARY "Don't go around telling people that though.  We're trying to keep a low profile."
 
-    call amp_exp from _call_amp_exp
+    call amp_exp
 
     EMPY "Nice to meet you. Lady Empy of House Kyrean."
     EMPY "My two childhood friends here are actually my personal bodyguard the guild assigned to me since I was little."
@@ -331,7 +331,7 @@ label act_1_start:
 
     "Ack, this judgemental brat is perceptive.  Definitely a sense mage."
 
-    call sensory_exp from _call_sensory_exp
+    call sensory_exp
 
     LIEF "Well that's great then!"
 
@@ -340,7 +340,7 @@ label act_1_start:
     PLAYER "I'm going to take a guess and say you are all here to support Lady Empy?"
     LIEF "That's correct.  I am a transit class portal mage tasked to evacuate certain individuals at this event in case something wrong happens."
 
-    call transit_exp from _call_transit_exp
+    call transit_exp
 
     LIEF "This youngling sense mage is my grandson, Kinna."
     LIEF "These two girls here are my twin grandkids, Vera and Lera. Kinna and them are cousins."
@@ -353,9 +353,9 @@ label act_1_start:
 
     "A soft voice comes out of nowhere as I scan the area around me."
     
-    call enfeeble_exp from _call_enfeeble_exp
+    call enfeeble_exp
 
-    call illusionist_exp from _call_illusionist_exp
+    call illusionist_exp
 
     "I feel their gazes observing me. Even when one of them I can't even see."
 

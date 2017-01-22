@@ -25,14 +25,14 @@ label start:
     "Summoning, transport, elemental, enchantment, healing... Thousands to choose from."
     "I decided to do something practical and went with {b}conjuring{/b}."  
 
-    call conjuring_exp from _call_conjuring_exp
+    call conjuring_exp
     
     "After years of toiling and struggling, I finally became a certified magic user."
     "..."
     "All those years of studying an amazing art just to barely eke out a living conjuring rental tools in the city of Pom that I recently moved to."
     "Here I am sitting on the toilet as I practice my craft using hand movements to freecast it."
 
-    call freecasting_exp from _call_freecasting_exp
+    call freecasting_exp
 
     "What should I conjure?"
 
