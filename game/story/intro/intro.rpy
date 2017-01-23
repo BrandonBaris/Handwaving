@@ -9,8 +9,6 @@ label start:
         if not PLAYER_NAME:
           PLAYER_NAME = "Null"
 
-    jump act_1_start
-    
     "Conjurer [PLAYER_NAME]!  That's my class title as a mage when I graduated the academy."
     "Magic in its many forms exists on the world of Myrth that I live in, shaping it it to what it is today."
     "{b}ALL POWERFUL MAGIC!{/b}"
