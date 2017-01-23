@@ -1,35 +1,35 @@
 # FIRE ELEMENTALIST CHEF
-define KON = Character('Kon', color="#c8ffc8")
+define KON = Character('Kon', color="#ee6600")
 
 # WATER MAGE CRYBABY LITTLE SISTER OF KAS
-define FLO = Character('Flo', color="#c8ffc8")
+define FLO = Character('Flo', color="#ee6600")
 
 # NECROMANCER GF OF MEDWICK
-define MARJ = Character('Marj', color="#c8ffc8")
+define MARJ = Character('Marj', color="#ee6600")
 
 # HEALING MAGE
-define MED = Character('Medwick', color="#c8ffc8")
+define MED = Character('Medwick', color="#ee6600")
 
 # BODY ENHANCER MAGE
-define WES = Character('Wes', color="#c8ffc8")
+define WES = Character('Wes', color="#ee6600")
 
 # TELEPORTATION MAGE
-define GM = Character('Guild Master Gram', color="#c8ffc8")
+define GM = Character('Guild Master Gram', color="#ee6600")
 
 # MANA BATTERY
-define EMPY = Character('Empy', color="#c8c8ff")
+define EMPY = Character('Empy', color="#ee6600")
 
 # GUN ENHANCER MAGE
-define MARY = Character('Mary', color="#c8c8ff")
+define MARY = Character('Mary', color="#ee6600")
 
 # TRANSPORT MAGE
-define LIEF = Character('Lief', color="#c8c8ff")
+define LIEF = Character('Lief', color="#ee6600")
 
 # SENSE MAGE
-define KINNA = Character('Kinna', color="#c8c8ff")
+define KINNA = Character('Kinna', color="#ee6600")
 
 # ENFEEBLING MAGE
-define VERA = Character('Vera', color="#c8c8ff")
+define VERA = Character('Vera', color="#ee6600")
 
 # ILLUSIONIST
-define LERA = Character('Lera', color="#c8c8ff")
+define LERA = Character('Lera', color="#ee6600")

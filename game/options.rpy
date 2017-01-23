@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "DEMO v0.0.2"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -60,7 +60,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "assets/sound/bgm/hachiko.mp3"
 
 
 ## Transitions #################################################################

@@ -51,7 +51,6 @@ label mage_lineage_exp:
   return 
 
 label necromancy_exp:
-
   "{b}Necromancy{/b}"
   "A forbidden magic type that manipulates the dead."
   "This magic is highly restricted as its very abuse was one of the main reasons the great mage wars dragged on too long."
@@ -77,6 +76,7 @@ label foci_exp:
   "Normal civilian mages are allowed to use tier 0 and 1 for normal use."
   "Some magic types are completely restricted from using any foci at all."
 
+  show marj at left
   MARJ "Like necromancy~ Heehee!"
 
   "Tier 2 and 3 are permitted to mages in defense-applicable disciplines like military."
@@ -84,9 +84,11 @@ label foci_exp:
   "Anything past tier 5 gets completely complex and restricted in terms of usage."
   "Foci can be chosen to the mage's style whether it be ceremonial daggers, skulls, or a simple job tool."
 
+  hide marj
+  show kon at right
   KON "I use a frying pan!"
-
   "..."
+  hide kon
 
   return
 

@@ -1,5 +1,8 @@
 label act_1_start:
-    # CHANGE SCENE
+    scene bg castle1
+    with dissolve
+
+    play music "assets/sound/bgm/enthusiast.mp3" fadeout 1.0 fadein 1.0
 
     "--POM MAGE GUILD--"
 
@@ -8,26 +11,32 @@ label act_1_start:
     "The massive guild hall is crowded with mages from around the region."
     "I enter the building as I observe the colorful individuals chatting and showing off their art."
 
-    # CHANGE SCENE
+    scene bg library
+    with dissolve
 
     "Amongst the throng of people, 3 groups stood out to me. I decided to the see what they were up to."
     "The first group stood out in particular because their aura seemed to contrast so much."
     
     PLAYER "Hi! I am Conjurer [PLAYER_NAME]."
 
+    show kon at truecenter
     "A brazen young man sporting what looked like kitchen cook clothes responded first."
-
+    hide flo
+    show kon at truecenter
     KON "Hiya! I am Fire Elementalist Kon! This girl over here is my younger sister, Flo."
 
+    show flo at truecenter
     "Kon points to a shy, petite girl who is clinging to his sleeve behind him."
-
     FLO "...Hi.  I am Water Elementalist Flo."
+    hide flo
+    show kon at truecenter
     KON "As you can see, we come from family of elementalists."
 
     call elementalist_exp from _call_elementalist_exp
 
     PLAYER "I guess you're a cook judging by your appearance?"
 
+    show kon at truecenter
     KON "Hahahahaha. That's right! My fire skills are super convenient for it!"
     KON "I love bringing enjoyment to people thru food I create using this magic that was used to cause mass destruction and fear in the past."
 
@@ -49,13 +58,19 @@ label act_1_start:
 
             "The chef gloats at his idealistic purpose as I slowly turn my head away."
 
+    hide kon
+    show flo at truecenter
     "I ask Flo a question."
 
     PLAYER "I'm guessing you're still in school?"
 
     "From her appearance I assumed she was a kid."
 
+    hide flo
+    show kon at truecenter
     KON "Huh? Flo? HAHAHAHAHA! She's actually 22 and still sticks to me like a little kid ever since she was a toddler!  She's such a big crybaby!"
+    hide kon
+    show flo at truecenter
     FLO "Wh-What are y-you saying?! Don't s-say that!"
 
     "Flo stammers while flustered at her brother's humiliating comment about her."
@@ -63,6 +78,8 @@ label act_1_start:
     "She's definitely a water mage."
 
     FLO "...*sniff*"
+    hide flo
+    show kon at truecenter
     KON "Phew. Despite her appearance and personality, she's actually a bartender."
     KON "We both work for our family's restaurant."
     KON "You should check it out.  Me and her together make some of the best food and drinks in town!"
@@ -71,6 +88,8 @@ label act_1_start:
 
         "I'd check it out for a drink maybe.":
             KON "Ya hear that Flo! [PLAYER_NAME] wants to drink with you!"
+            hide kon
+            show flo at truecenter
             FLO "!"
 
             "Flo tries to hide her blushing face behind her brother."
@@ -80,14 +99,24 @@ label act_1_start:
         "I'd check it out for the food.":
             KON "You won't be disappointed with my culinary skill!"
             KON "HAHAHAHAHAHAHA!"
+            hide kon
+            show flo at truecenter
             FLO "...brother..."
 
         "Sure. One day.":
+            hide kon
+            show flo at truecenter
             FLO "P-please visit us."
+            hide flo
+            show kon at truecenter
             KON "You won't be dissapointed with our hospitality!"
 
+    show kon at topleft
+    show flo at topright
     "Kon and Flo slide into a pose as they show their strong family bond."
     "The sibling's magic synergy that compliment their jobs is a common path for mages."
+    hide kon
+    hide flo
 
     call mage_career_pairing_exp from _call_mage_career_pairing_exp
 
@@ -95,7 +124,7 @@ label act_1_start:
     "The female looked gloomy with the dark style of clothes she wore."
     "The male on the other hand had a very clean look that displayed a professional, welcoming presence."
     "Looking at the two together is like seeing night and day."
-
+    show med at truecenter
     MED "Hello. I am Medwick.  A healing mage... can you guess what career path I took..."
 
     "The man introduces himself in a somber tone and tells me to guess his occupation."
@@ -126,6 +155,8 @@ label act_1_start:
     "...This dude is actually kind of depressing."
 
     MED "This is my girlfriend, Marj."
+    hide med
+    show marj at truecenter
 
     "Medwick points to the emo-looking girl."
 
@@ -166,41 +197,57 @@ label act_1_start:
     
     "{b}Don't think about it!{/b}"
 
+    hide marj
+    show med at truecenter
     MED "Marj likes to {i}'collect'{/i} animals."
 
     "Damn you!"
 
+    hide med
+    show kon at truecenter
     KON "So you're a conjurer right?  That could be pretty useful for fabricating item prototypes."
     KON "Me and Flo are joining these two because it might be interesting teaming up with their rare magic types."
     KON "We'd love to have you if you want to join us!"
+    hide kon
+    show flo at truecenter
     FLO "..."
+    hide flo
+    show marj at truecenter
     MARJ "Yea! We won't bore you to {i}death!{/i}"
+    hide marj
+    show med at truecenter
     MED "..."
     MED "...heh."
 
     "I know who pulls who in this relationship."
-
     PLAYER "Thanks. I'll think about it. I'm going to go and chat with the others before the event starts."
-
+    hide med
     "I head to the second group that seemed to interest me."
     "A muscular man, a mysterious hooded woman, and a beautiful noble-like lady."
     "A subtle, but unique aura I couldn't really pinpoint was coming from this group."
 
     PLAYER "Hello, I am Conjurer [PLAYER_NAME]! What do you all plan to create?"
+    show wes at truecenter
     WES "Sup yo! Enchanter Wes!"
     WES "The man raises his hand for a fist bump greeting, but his excitement fuels it a bit too much with power."
 
     "Quick! What do I do?"
-
+    hide wes
     menu:
 
         "Dodge it.":
             "I attempt to duck as I see the unintentional pain train headed towards me."
             "I fail as I meet the greeting with my face and I careen across the hall."
-
+            show empy at truecenter
             EMPY "!"
+            hide empy
+            show mary at truecenter
             MARY "Wes! You idiot!"
+            hide mary
+            show wes at truecenter
             WES "Woops! I got too excited."
+            hide wes
+            show med at truecenter
             MED "*sighs* I'm a doctor."
 
             "I get carried off to the healing ward as I am forced to drop out of the event to recover my broken body."
@@ -219,11 +266,12 @@ label act_1_start:
 
             PLAYER "AHHHHHHHHH!"
             PLAYER "GRARGGHHH!"
+            show med at truecenter
             MED "*sighs* I'm a doctor."
 
             "Thankfully Medwick was there to witness the ordeal and tend to my injury."
             "He mechanically heals me like a lifeless robot and returns to his group."
-
+            hide med
         "Embrace death.":
             "It's too late, I can't do anything to stop it."
             "I close my eyes.  So this is how it ends."
@@ -231,23 +279,32 @@ label act_1_start:
             "BAM! I hear a sound and feel a wave of energy disperse as I slowly open my eyes."
             "Before me was the hooded woman holding Wes' hand as she countered his over enthusiastic greeting."
 
+    show mary at truecenter
     MARY "Wes, you idiot!  Control yourself!"
 
     "The mysterious hooded woman scolds the huge man man as he embarassingly scratches his head at his fault."
     "I notice the emblem on the woman's hood recognizing it as being part of the guild's guard."
 
     MARY "Sorry about my friend here. He gets a bit too enthusiastic about everything."
+    hide wes
+    show mary at truecenter
     MARY "It's like his magic also enhances his stupidity."
 
     call enchantment_exp from _call_enchantment_exp
 
     MARY "Wes and I are enchanters.  He enhances his body..."
+    hide mary
+    show wes at truecenter
     WES "MUSCLE!! RAH!!"
+    hide wes
+    show mary at truecenter
     MARY "..."
     MARY "I enhance my weapon, which is a rifle that also serves as my focus."
 
     call foci_exp from _call_foci_exp
 
+    hide mary
+    show wes at truecenter
     WES "Pfft. I have guns too!"
 
     "Wes flexes his arms that are tatooed with magic runes."
@@ -256,6 +313,8 @@ label act_1_start:
 
     call runing_exp from _call_runing_exp
 
+    hide wes
+    show mary at truecenter
     MARY "..."
     MARY "We all work in the guild here."
 
@@ -272,13 +331,19 @@ label act_1_start:
     EMPY "My two childhood friends here are actually my personal bodyguard the guild assigned to me since I was little."
 
     "She gives a radiant smile that could lift any sullen soul."
-
+    hide mary
+    show empy at truecenter
     EMPY "I asked to secretly join this event to see magic creativity and to have fun with my dearest friends."
+    hide empy
+    show mary at truecenter
     MARY "MY LADY!"
+    hide mary
+    show wes at truecenter
     WES "WOOOOOO!"
 
     "The two enchanter friends become hyped up just from hearing her words."
-
+    hide wes
+    show empy at truecenter
     EMPY "Would you like to join us?"
 
     "Two enchanters that specialize in short and long range martial disciplines and a beautiful Amp."
@@ -292,6 +357,8 @@ label act_1_start:
 
         "I'd mana tap it...":
             EMPY "Huh?"
+            show wes at topleft
+            show mary at topright
             WES "!"
             PLAYER "I'LL THINK ABOUT IT!"
             MARY "..."
@@ -306,9 +373,11 @@ label act_1_start:
             PLAYER "Sounds great, but I want to check out out some more magic types before deciding on a group."
             EMPY "I understand."
 
-
+    hide wes
+    hide mary
     "Empy gives a sad smile as I excuse myself."
     "HNNNNNNG! My heart!"
+    hide empy
     "..."
     "Finally I go to the last group that piqued my interest."
     "A chubby old man, a tiny boy, and a nerdy looking girl."
@@ -317,6 +386,7 @@ label act_1_start:
     "I as a conjurer craftsman for example wear my business logo on my clothes and a carry a bag full of tools to aid my conjuring and rent out to others."
 
     PLAYER "Hi! I am Conjurer [PLAYER_NAME]."
+    show lief at truecenter
     LIEF "Welcome.  I am Captain Lief."
 
     "The old man greets me first with an astute smile."
@@ -326,6 +396,8 @@ label act_1_start:
     "Lief turns to the small boy and whispers to him."
 
     LIEF "Kinna, you sense any malicious intent from this conjurer?"
+    hide lief
+    show kinna at truecenter
     KINNA "Mmmm. Nope."
     KINNA "Just a feeling of unrest from a unfulfilling existence."
 
@@ -333,6 +405,8 @@ label act_1_start:
 
     call sensory_exp from _call_sensory_exp
 
+    hide kinna
+    show lief at truecenter
     LIEF "Well that's great then!"
 
     "Lief's expressions lightens up to a more jolly tone."
@@ -344,11 +418,13 @@ label act_1_start:
 
     LIEF "This youngling sense mage is my grandson, Kinna."
     LIEF "These two girls here are my twin grandkids, Vera and Lera. Kinna and them are cousins."
-
+    hide lief
     "Huh? Two?"
+    show vera at truecenter
     "I only see one girl in front of me."
-
+    
     VERA "Binder Vera. Enfeebling type mage."
+    show white1 at left
     LERA "Illusionist Lera.  Illusions and stuff."
 
     "A soft voice comes out of nowhere as I scan the area around me."
@@ -358,20 +434,27 @@ label act_1_start:
     call illusionist_exp from _call_illusionist_exp
 
     "I feel their gazes observing me. Even when one of them I can't even see."
-
     VERA "Hey, you're kind of cute. Don't you think so Lera?"
     LERA "I agree."
     VERA "Heh, I wouldn't mind binding you."
     LERA "Heh heh heh."
 
     "Okay... My comfort zone feels suddenly violated."
+    show white1 at topleft
+    show white1 at topright
+    show white1 at left
+    show white1 at right
+    hide white1
     "With a flash, Lera reveals herself and I see a pretty boy appear."
+    show lera boy at truecenter
 
     menu:
 
         "It's a trap!":
             LERA "Just messing with you!"
 
+            hide lera boy
+            show lera girl at truecenter
             "Lera's appearance shifts to a pretty girl."
 
             LERA "Or am I?"
@@ -381,30 +464,48 @@ label act_1_start:
             LERA "Did you just assume my gender?"
             LERA "What if I'm named that way to trick people?"
 
+            hide lera boy
+            show lera girl at truecenter
             "Lera's appearance shifts to a pretty girl."
 
         "Huh? What? Who?":
             "My mind babbles as it tries to identify the gender of this mage."
             "Lera's appearance shifts toggling from a pretty girl to a pretty boy."
 
+            hide lera boy
+            show lera girl at truecenter
+            hide lera girl
+            show lera boy at truecenter
+            hide lera boy
+            show lera girl at truecenter
+            hide lera girl
+            show lera boy at truecenter
+            hide lera boy
+            show lera girl at truecenter
             LERA "Hehehe, the reaction I get from people always amuses me!"
 
     "Blargh. Soooooo confusing to deal with."
-
+    hide lera girl
+    show vera at truecenter
     VERA "But you know, Mary is kind of sexy with that mysterious look.  I always wonder what she's hiding underneath it all."
+    hide vera
+    show lera girl
     LERA "I prefer admiring Wes' muscles."
     LERA "Up."
     LERA "Close."
     LERA "If you know what I mean."
 
     "The twins giggle as they continue their talk."
-
+    hide lera girl
+    show kinna at truecenter
     KINNA "Ugggggggggh."
 
     "The boy groans and looks at his cousins with a disdainful look."
     "Looks like he too doesn't approve of their antics.  I can only imagine what he sees in their aura."
     "The grandfather couldn't care less as he diligently does his job and stands motionless on the lookout."
 
+    hide kinna
+    show lief at truecenter
     LIEF "..."
 
     "Wait a minute...."
@@ -427,10 +528,18 @@ label act_1_start:
     LIEF "Ahem. You're free to join us if you want."
     LIEF "My grandkids want to amuse themselves at this event so they are participating as well."
     LIEF "There are many other squads here tasked with protection so we are allowed some slack to play around."
+    
+    hide lief
+    show vera at truecenter
     VERA "Yes, play with us!"
+    hide vera
+    show lera girl at truecenter
     LERA "Please play with us!"
+    hide lera girl
+    show kinna at truecenter
     KINNA "..."
     PLAYER "Uhh. Thanks. I'll think about it."
+    hide kinna
 
     "..."
     "So after getting to know the groups a bit better, I sat and pondered to decide which group I should join."

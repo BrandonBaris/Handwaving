@@ -397,10 +397,10 @@ style main_menu_frame:
 
 style main_menu_vbox:
     xalign 1.0
-    xoffset -20
+    xoffset -200
     xmaximum 800
     yalign 1.0
-    yoffset -20
+    yoffset -200
 
 style main_menu_text:
     xalign 1.0
